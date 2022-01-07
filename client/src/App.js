@@ -1,23 +1,21 @@
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+import React from "react";
+ 
+// We use Route in order to define the different routes of our application
+import { Route, Routes } from "react-router-dom";
+ 
+// We import all the components we need in our app
+import Navbar from "./components/navbar";
+import Create from "./components/create";
+ 
+const App = () => {
+ return (
+   <div>
+     <Navbar />
+     <Routes>
+       <Route path="/create" element={<Create />} />
+     </Routes>
+   </div>
+ );
+};
+ 
 export default App;
