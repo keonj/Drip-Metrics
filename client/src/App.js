@@ -5,14 +5,20 @@ import { Route, Routes } from "react-router-dom";
  
 // We import all the components we need in our app
 import Navbar from "./components/navbar";
-import Create from "./components/create";
+import Moisture from "./components/moisture";
+import SensorImages from "./components/sensor-images";
+import Map from "./components/map";
+import FertilizerSelector from "./components/fertilizer-selector";
  
 const App = () => {
  return (
    <div>
      <Navbar />
      <Routes>
-       <Route path="/create" element={<Create />} />
+       <Route path="/moisture" element={<Moisture />} />
+       <Route path="/sensor-images" element={<SensorImages />} />
+       <Route path="/map" element={<Map />} />
+       <Route path="/fertilizer-selector" element={<FertilizerSelector />} />
      </Routes>
    </div>
  );
