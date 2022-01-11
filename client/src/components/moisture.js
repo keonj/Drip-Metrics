@@ -1,11 +1,42 @@
 import React, { useState } from "react";
-
  
 export default function Moisture() {
 
  // This following section will display the form that takes the input from the user.
  // Put HTML here
  return ( 
-     <p>moisture something</p>
+     <div class="container mt-3">
+        <div class="row text-center">
+            <h1>Moisture Level</h1>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Zone</th>
+                    <th scope="col">Optimal Moisture</th>
+                    <th scope="col">Current Moisture</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>72%</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>70%</td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>75%</td>
+                    <td>50%</td>
+                    <td>AT RISK</td>
+                </tr>
+            </tbody>
+        </table>
+     </div>
  );
 }
