@@ -54,7 +54,7 @@ export default function Moisture() {
                 </tr>
             </tbody>
         </table>
-        <div id="chart"></div>
+        <div style={{height: "500px"}} id="chart"></div>
         
      </div>
  );
