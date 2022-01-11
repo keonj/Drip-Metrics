@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ChartsEmbedSDK from '@mongodb-js/charts-embed-dom';
 import "./moisture.css";
  
@@ -17,7 +17,9 @@ export default function Moisture() {
             .catch(() => window.alert('Chart failed to initialise'));
     }
 
-    window.onload = myFunction;
+    useEffect(() => {
+        myFunction();
+    })
 
  // This following section will display the form that takes the input from the user.
  // Put HTML here
