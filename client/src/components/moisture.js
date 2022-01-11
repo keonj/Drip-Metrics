@@ -1,6 +1,23 @@
 import React, { useState } from "react";
+import ChartsEmbedSDK from '@mongodb-js/charts-embed-dom';
+import "./moisture.css";
  
 export default function Moisture() {
+    function myFunction(){
+        const sdk = new ChartsEmbedSDK({
+            baseUrl: 'https://charts.mongodb.com/charts-dripdatabase-tkohi',
+          });
+          const chart = sdk.createChart({
+            chartId: '8fae5196-bd76-4776-b6b0-ae7931086753',
+          });
+          
+          // render the chart into a container
+          chart
+            .render(document.getElementById('chart'))
+            .catch(() => window.alert('Chart failed to initialise'));
+    }
+
+    window.onload = myFunction;
 
  // This following section will display the form that takes the input from the user.
  // Put HTML here
@@ -37,6 +54,8 @@ export default function Moisture() {
                 </tr>
             </tbody>
         </table>
+        <div id="chart"></div>
+        
      </div>
  );
 }
