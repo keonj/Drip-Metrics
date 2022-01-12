@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import ChartsEmbedSDK from '@mongodb-js/charts-embed-dom';
-import "./moisture.css";
  
 export default function Moisture() {
     function myFunction(){
