@@ -7,7 +7,7 @@ export default function SensorImages() {
  // Put HTML here
  return ( 
      <div>
-        <p>Sensor 1 (most recent) shirley is a fuck face</p>
+        <p>Sensor 1 (most recent)</p>
         <img src="http://mydrip.ca/wec2022/uploads/2022.01.09_17:19:13_esp32-cam.jpg"></img>
 
      </div>
