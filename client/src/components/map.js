@@ -42,8 +42,8 @@ export default function Map() {
  // Put HTML here
  return ( 
      <div>
-         <div style={{height: "500px"}} id="chart1"></div>
-         <div style={{height: "500px"}} id="chart2"></div>
+         <div style={{height: "500px", padding: "50px"}} id="chart1"></div>
+         <div style={{height: "500px", padding: "50px"}} id="chart2"></div>
      </div>
  );
 }

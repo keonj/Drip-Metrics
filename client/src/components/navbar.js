@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.jpg";
- 
+
 // We import bootstrap to make our application look better.
 import "bootstrap/dist/css/bootstrap.css";
  
@@ -42,11 +42,6 @@ export default function Navbar() {
            <li>
              <NavLink className="nav-link" to="/map">
                Map
-             </NavLink>
-           </li>
-           <li>
-             <NavLink className="nav-link" to="/fertilizer-selector">
-               Fertilizer Selector
              </NavLink>
            </li>
          </ul>

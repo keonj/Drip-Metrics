@@ -8,7 +8,6 @@ import Navbar from "./components/navbar";
 import Moisture from "./components/moisture";
 import SensorImages from "./components/sensor-images";
 import Map from "./components/map";
-import FertilizerSelector from "./components/fertilizer-selector";
  
 const App = () => {
  return (
@@ -18,7 +17,6 @@ const App = () => {
        <Route path="/moisture" element={<Moisture />} />
        <Route path="/sensor-images" element={<SensorImages />} />
        <Route path="/map" element={<Map />} />
-       <Route path="/fertilizer-selector" element={<FertilizerSelector />} />
      </Routes>
    </div>
  );
