@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import ChartsEmbedSDK from '@mongodb-js/charts-embed-dom';
 import "./moisture.css";
  
