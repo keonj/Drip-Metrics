@@ -8,17 +8,21 @@ import Navbar from "./components/navbar";
 import Moisture from "./components/moisture";
 import SensorImages from "./components/sensor-images";
 import Map from "./components/map";
+import Home from "./components/home";
  
 const App = () => {
  return (
    <div>
      <Navbar />
      <Routes>
+     <Route path="/" element={<Home />} />
        <Route path="/moisture" element={<Moisture />} />
        <Route path="/sensor-images" element={<SensorImages />} />
        <Route path="/map" element={<Map />} />
      </Routes>
-   </div>
+
+     
+     </div>
  );
 };
  
